@@ -1,73 +1,60 @@
 <!-- start: PAGE -->
 <div class="main-content">
-	<div class="container">
+    <div class="container">
             <div class="row">
             <div class="col-sm-12">
                 <div class="page-header">
-                    <h3><b><i>Sistem Rekomendasi Penitipan Anak Surabaya Berbasis Sentiment Analysis</i></b></h3>
+                    <h2 style="width: 100%; text-align: center;"><b>SISTEM REKOMENDASI PENITIPAN ANAK</b></h2>
+                    <h2 style="width: 100%; text-align: center;"><b>BERBASIS <i>TEMPORAL SENTIMENT ANALYSIS</i></b></h2>
                 </div>
-            </div>
+            </div> 
     </div>
         <?= form_open('research/trend_result'); ?>
-		<div class="row" style="margin-bottom: -40px;">
+        <div class="row" style="margin-bottom: -40px;">
             <div class="panel-body">
-                <div class="col-md-7">
-                    <div class="panel panel-default">                                              
-                            <!--<div class="flot-xsmall-container">                                            
-                                <div class="form-horizontal">
-                                    <div class="form-group" style="margin-bottom: 0px;">
-                                        <label class="col-sm-2 control-label label-form" for="form-field-1" style="margin-top: 5px;">
-                                            KATEGORI
-                                        </label>
-                                        <div class="col-sm-9">
-                                            <label class="radio-inline">
-                                                <input name="radioSentiment" type="radio" id="radioSentiment1" value="1"> Alam
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input name="radioSentiment" type="radio" id="radioSentiment2" value="2"> Buatan
-                                            </label>
-                                        </div>
-                                    </div>
-                                </div>-->
+                <div class="col-md-12">
+                    <div class="panel panel-default" style="margin-left: 15%;margin-right: 15%;">                                              
                                 </br>
                                     <div class="form-group">
-                                        <label class="col-sm-2 control-label label-form" for="form-field-1">
-                                            JUMLAH
+                                        <label class="col-sm-2 control-label label-form" for="form-field-1" style="width : 72%; text-align: center; margin-right: -25%;margin-left: -8.7%;">
+                                            <h4 style="margin-top: 1px;">
+                                                <b>JUMLAH</b>
+                                            </h4>
                                         </label>                                                                                
-                                                <div class="col-md-5">  
-                                                    <select name="table_data_length" aria-controls="table_data" class=""><option value="5">5</option><option value="10">10</option></select> Rekomendasi
+                                                <div class="col-md-5" style="margin-left: 0%;">  
+                                                    <select name="table_data_length" aria-controls="table_data" class=""><option value="5">5</option><option value="10">10</option><option value="15">15</option></select> <b>Rekomendasi</b>
                                                 </div>                                                                      
                                     </div>                            
                                 </br>
                                 <div class="form-horizontal">
-                                    <!--<div class="form-group" style="margin-bottom: 0px;">
-                                        <label class="col-sm-2 control-label label-form" for="form-field-1" style="margin-top: 5px;">
-                                            KOMENTAR
+                                    <div class="form-group" style="margin-bottom: 0px;">
+                                        <label class="col-sm-2 control-label label-form" for="form-field-1" style="width : 72%; text-align: center; margin-right: -12.5%;margin-left: -46.5%;margin-top: 15px;">
+                                            <h4 style="margin-top: -7px;"><b>KOMENTAR</b></h4>
                                         </label>
-                                        <div class="col-sm-4">
-                                                    <label class="control-label" style="padding-top: 3px">
-                                                        Dari Tanggal
-                                                    </label>
-                                                    <div class="input-group" style="width: 150px;">
-                                                        <input name="interval_date_from" type="text" class="form-control span2 datepicker" value="<?= date('D/M/Y'); ?>">
-                                                        <span class="input-group-addon"> <i class="icon-calendar"></i> </span>
-                                                    </div>
-                                                </div>                                                
-                                                    <label class="control-label" style="padding-top: 3px">
-                                                        Sampai Tanggal
-                                                    </label>
-                                                    <div class="input-group" style="width: 150px;">
-                                                        <input name="interval_date_until" type="text" class="form-control span2 datepicker" value="<?= date('D/M/Y'); ?>">
-                                                        <span class="input-group-addon"> <i class="icon-calendar"></i> </span>
-                                                    </div>
-                                                    </br>                                                    
-                                    </div>-->
+
+                                        <div style="margin-left: -10%;">
+                                            <label class="radio-inline">
+                                                <p style="margin-left: -70%;"><b>Dari Tanggal</b></p>
+                                            <div class="input-group" style="width: 150px;margin-left: -70%;">
+                                                <span class="input-group-addon"> <i class="icon-calendar"></i> </span>
+                                                <input name="interval_date_from" type="text" class="form-control span2 datepicker" value="<?= date('D/M/Y'); ?>">
+                                            </div>
+                                            </label>
+                                            <label class="radio-inline">
+                                                <p style="margin-left: -83%;"><b>Sampai Tanggal</b></p>
+                                                <div class="input-group" style="width: 150px;margin-left: -83%;">
+                                                    <span class="input-group-addon"> <i class="icon-calendar"></i> </span>
+                                                    <input name="interval_date_until" type="text" class="form-control span2 datepicker" value="<?= date('D/M/Y'); ?>">
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>                            
                                 </div>
-                                <div class="row">
+                                <div class="row" style="text-align: center;">
                                     <div class="col-md-9">
-                                        <div class="panel-body">
+                                        <div class="panel-body" style="margin-left: 40%;">
                                             <button type="submit" name="submit" value="Test" class="btn btn-bricky btn-md">
-                                               LIHAT REKOMENDASI
+                                               <b>LIHAT REKOMENDASI</b>
                                             </button>
                                         </div>
                                     </div>
@@ -80,10 +67,10 @@
         <?= form_close(); ?>
         
         </div>
-	</div>
-	
+    </div>
+    
 </div>
-			
+            
 </div>
 
 </div>
