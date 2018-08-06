@@ -1,7 +1,7 @@
 <?php if ($data) ?>
 <div class="row">
 				<div class="panel-body">
-					<h1 style="width: 100%; text-align: center;"><b>SISTEM REKOMENDASI PENITIPAN ANAK</b></h1>
+					<h1 style="width: 100%; text-align: center;"><b>SISTEM REKOMENDASI PENITIPAN ANAK SURABAYA</b></h1>
 					<h1 style="width: 100%; text-align: center;"><b>BERBASIS <i>TEMPORAL SENTIMENT ANALYSIS</i></b></h1>
 					<table class="table table-bordered" border="1" align="center">
 						<thead>

@@ -4,7 +4,7 @@
             <div class="row">
             <div class="col-sm-12">
                 <div class="page-header">
-                    <h2 style="width: 100%; text-align: center;"><b>SISTEM REKOMENDASI PENITIPAN ANAK</b></h2>
+                    <h2 style="width: 100%; text-align: center;"><b>SISTEM REKOMENDASI PENITIPAN ANAK SURABAYA</b></h2>
                     <h2 style="width: 100%; text-align: center;"><b>BERBASIS <i>TEMPORAL SENTIMENT ANALYSIS</i></b></h2>
                 </div>
             </div> 
